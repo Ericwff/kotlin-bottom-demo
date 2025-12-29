@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_study">
+
+    <fragment
+        android:id="@+id/navigation_study"
+        android:name="com.example.bottomnavigationapplication.ui.study.StudyFragment"
+        android:label="@string/title_study"
+        tools:layout="@layout/fragment_study" />
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.bottomnavigationapplication.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.bottomnavigationapplication.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.bottomnavigationapplication.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <navigation
+        android:id="@+id/navigation4"
+        app:startDestination="@id/navigation3">
+        <navigation
+            android:id="@+id/navigation3"
+            app:startDestination="@id/navigation2">
+            <navigation
+                android:id="@+id/navigation2"
+                app:startDestination="@id/navigation">
+                <navigation
+                    android:id="@+id/navigation"
+                    app:startDestination="@id/navigation_study">
+                    <fragment
+                        android:id="@+id/navigation_study"
+                        android:name="com.example.bottomnavigationapplication.ui.study.StudyFragment"
+                        android:label="@string/title_study"
+                        tools:layout="@layout/fragment_study" />
+                </navigation>
+            </navigation>
+        </navigation>
+    </navigation>
+</navigation>

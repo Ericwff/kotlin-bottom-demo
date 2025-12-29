@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/get_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查询联系人" />
+    <Button
+        android:id="@+id/insert_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新增联系人" />
+    <Button
+        android:id="@+id/update_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="更新联系人" />
+    <Button
+        android:id="@+id/delete_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="删除联系人" />
+</LinearLayout>
