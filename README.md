@@ -1,5 +1,5 @@
 # kotlin-bottom-demo
-练习
+基于kotlin的安卓APP项目模板
 
 ## Development Roadmap
 
